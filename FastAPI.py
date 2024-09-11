@@ -9,7 +9,7 @@ class NameRequest(BaseModel):
 @app.post("/print-name/")
 async def print_name(request: NameRequest):
     print(request.name)  # This will print the name to the server's console
-    return {"message": f"Name received: {request.name}"}
+    return {"message": f"Hello, the Name received: {request.name}"}
 
 if __name__ == '__main__':
     import uvicorn
